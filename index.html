@@ -37,7 +37,7 @@
                  </li>
                  <div class="small-screen navbar-display">
                      
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                     <li class="dropdown d-lg-none d-md-none d-xl-none d-none">
                          <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"></a>
                          <ul class="collapse list-unstyled menu" id="homeSubmenu0">
                              <li><a href="#">You have 5 new Messages</a></li>
@@ -47,20 +47,17 @@
                          </ul>
                      </li>
 
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#" class="dashboard"><i class="material-icons">apps</i><span>apps</span></a>
+                     </li>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#" class="dashboard"><i class="material-icons">person</i><span>user</span></a>
+                     </li>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#" class="dashboard"><i class="material-icons">settings</i><span>setting</span></a>
+                     </li>
+
                     
-                        <li class=" d-lg-none d-md-block d-xl-none d-sm-block">
-                          <a href="#"><i class="material-icons">apps</i><span>apps</span></a>
-                        </li>
-
-                        <li class=" d-lg-none d-md-block d-xl-none d-sm-block">
-                          <a href="#"><i class="material-icons">person</i><span>user</span></a>
-                        </li>
-
-                        <li class=" d-lg-none d-md-block d-xl-none d-sm-block">
-                          <a href="#"><i class="material-icons">settings</i><span>setting</span></a>
-                        </li>
-
-
 
                  </div>
 
@@ -162,42 +159,74 @@
                     <ul class="nav navbar ms-auto">
 
                         <li class="nav-item dropdown active">
-                              <a class="nav-link" href="#" data-toggle="dropdown">
-                                <span class="material-icons">notifications</span>
-                                <span class="notifications">4</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#">You have 4 New Messages</a></li>
-                                  <li><a href="#">You have 4 New Messages</a></li>
-                                  <li><a href="#">You have 4 New Messages</a></li>
-                                  <li><a href="#">You have 4 New Messages</a></li>
-                              </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="#" data-toggle="dropdown">
                                 <span class="material-icons">notifications</span>
                                 <span class="notifications">4</span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </li>
+                            <ul class="dropdown-menu  mx-0  ">
+                                <li class="dropdown-item pt-3 pb-3">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                </li>
+                                <li class="dropdown-item pt-3 pb-3">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                </li>
+                                <li class="dropdown-item pt-3 pb-3">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                </li>
+                                <li class="dropdown-item pt-3 pb-3">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                </li>
+                                <li class="dropdown-item pt-3 pb-3">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                </li>
+                            </ul>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="#"><span class="material-icons">apps</span></a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><span class="material-icons">person</span></a>
+                       
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link" href="#" data-toggle="dropdown">
+                                <span class="material-icons">person</span>
+                            </a>
+                            <ul class="dropdown-menu  mx-0  ">
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="material-icons">account_box</i><span>الملف الشخصي</span></a>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="material-icons">mail</i><span>الرسائل</span></a>
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="material-icons">logout</i><span>تسجيل الخروج</span></a>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><span class="material-icons">settings</span></a>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link" href="#" data-toggle="dropdown">
+                                <span class="material-icons">settings</span>
+                            </a>
+                            <ul class="dropdown-menu  mx-0  ">
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="material-icons">settings</i><span>الإعدادات</span></a>
+                                    </a>
+                                </li>
+                               
+                                
+                            </ul>
                         </li>
+
+
                    </ul>
                  </div>
              </nav>
@@ -461,6 +490,18 @@
                 $("#sidebar-collapse .material-icons").toggleClass('d-none');
             }
         });
+
+
+
+        $('.top-navbar, #navbarcollapse').click(function(){
+            if ($("show")[0]){
+                $('.nav-item .dropdown').addClass("active");
+            } else {
+                $('.nav-item .dropdown').removeClass("active");
+            }
+        });
+
+       
 
         $(".more-button, .body-overlay").on('click', function(){
             $('#sidebar, .body-overlay').toggleClass('show-nav');

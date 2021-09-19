@@ -172,7 +172,7 @@ a:focus {
 }
 #sidebar ul li.active > a {
   color: #fff;
-  background-color: rgba(255, 251, 251, 0.2);
+  background-color: rgba(31, 51, 49);
 }
 #sidebar ul li a:hover {
   color: #fff;
@@ -243,6 +243,7 @@ a:focus {
 .navbar {
   background-color: #b3bbbe;
   color: #fff !important;
+  padding-left: 9px;
 }
 
 .navbar-brand {
@@ -320,6 +321,26 @@ a:focus {
   position: relative;
   display: block;
   padding: 10px 15px !important;
+}
+
+.nav-link {
+  color: #344f4d !important;
+}
+.nav-item {
+  color: #344f4d !important;
+  border-radius: 10%;
+}
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 10%;
+}
+.nav-item:focus {
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 10%;
+}
+.nav-item.active {
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 10%;
 }
 
 /*============================================================================
@@ -635,8 +656,10 @@ footer .copyright {
     visibility: visible;
     transition: all 150ms linear;
     min-width: 15rem;
-    left: 0;
+    left: 0px;
     right: auto;
+    top: 10px;
+    top: 58px;
     opacity: 1;
   }
 }
