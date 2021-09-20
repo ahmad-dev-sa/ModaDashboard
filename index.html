@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>لوحة التحكم</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-beJoAY4VI2Q+5IPXjI207/ntOuaz06QYCdpWfWRv4lSFDyUSqsM0W+wiAMr2I185" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" integrity="sha384-beJoAY4VI2Q+5IPXjI207/ntOuaz06QYCdpWfWRv4lSFDyUSqsM0W+wiAMr2I185" crossorigin="anonymous">
     <!-- CSS3 -->
     <link rel="stylesheet" href="css/custom.css">
-    <!-- SLLDER REVOLUION 4 . x CSS SETTING -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;700&display=swap" rel="stylesheet">
-
     <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"   rel="stylesheet">
+    <link href="css/material-design-icons.css"   rel="stylesheet">
 
 </head>
 <body>
@@ -31,7 +26,7 @@
              </div>
 
 
-             <ul class="list-unstyled components">
+             <ul class="list-unstyled components" id="myGroup">
                  <li class="active">
                     <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span> الأنظمة والصلاحيات</span></a>
                  </li>
@@ -47,24 +42,23 @@
                          </ul>
                      </li>
 
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#" class="dashboard"><i class="material-icons">apps</i><span>apps</span></a>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block d-none">
+                        <a href="#" class="dashboard"><i class="material-icons">apps</i><span>التطبيقات</span></a>
                      </li>
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#" class="dashboard"><i class="material-icons">person</i><span>user</span></a>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block d-none">
+                        <a href="#" class="dashboard"><i class="material-icons">person</i><span>المستخدم</span></a>
                      </li>
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#" class="dashboard"><i class="material-icons">settings</i><span>setting</span></a>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block d-none">
+                        <a href="#" class="dashboard"><i class="material-icons">settings</i><span>الإعدادات</span></a>
                      </li>
-
-                    
 
                  </div>
 
+
                  <li class="dropdown">
-                    <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">aspect_ratio</i><span>نظام الموظفين</span></a>
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu1">
+                    <a href="#" id="CloseAll" data-bs-toggle="collapse" data-bs-target="#pageSubmenu1" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu1">
+                    <i class="material-icons">person</i><span>نظام الموظفين</span></a>
+                    <ul class="collapse list-unstyled menu " id="pageSubmenu1">
                         <li><a href="#">الصفحة الرئيسية</a></li>
                         <li><a href="#">إضافة موظف جديد</a></li>
                         <li><a href="#">موظف جديد / مختصر</a></li>
@@ -72,19 +66,19 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">apps</i><span>إدارة المهام</span></a>
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu2">
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu2" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu2">
+                    <i class="material-icons">format_list_bulleted</i><span>إدارة المهام</span></a>
+                    <ul class="collapse list-unstyled menu " id="pageSubmenu2">
                         <li><a href="#">الصفحة الرئيسية</a></li>
                         <li><a href="#">التقرير والأحصائيات</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown">
-                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">equalizer</i><span>الترميز والتصنيفات</span></a>
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu3" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu3">
+                    <i class="material-icons">grid_view</i><span>الترميز والتصنيفات</span></a>
                     
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu3">
+                    <ul class="collapse list-unstyled menu " id="pageSubmenu3">
                         <li><a href="#">إدارة ترميز الرتب والوظائف</a></li>
                         <li><a href="#">إدارة ترميز التخصصات</a></li>
                         <li><a href="#">إدارة ترميز المؤهلات العلمية</a></li>
@@ -93,13 +87,13 @@
                 </li>
 
                 <li class="active">
-                    <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span>التحكم والأمان</span></a>
+                    <a href="#" class="dashboard"><i class="material-icons">security</i><span>التحكم والأمان</span></a>
                  </li>
 
                 <li class="dropdown">
-                    <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">extension</i><span>إدارة المستخدمين</span></a>
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu4">
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu4" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu4">
+                    <i class="material-icons">people</i><span>إدارة المستخدمين</span></a>
+                    <ul class="collapse list-unstyled menu " id="pageSubmenu4">
                         <li><a href="#">استعلام المستخدمين</a></li>
                         <li><a href="#">تسجيل مستخدم جديد</a></li>
                         <li><a href="#">صلاحيات المستخدمين</a></li>
@@ -107,33 +101,15 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">border_color</i><span>إدارة الصلاحيات</span></a>
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu5">
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu5" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu5">
+                    <i class="material-icons">admin_panel_settings</i><span>إدارة الصلاحيات</span></a>
+                    <ul class="collapse list-unstyled menu " id="pageSubmenu5">
                         <li><a href="#">استعلام الصلاحيات</a></li>
                         <li><a href="#">إضافة صلاحية جديدة</a></li>
                     </ul>
                 </li>
 
-                <li class="dropdown">
-                    <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">grid_on</i><span>table</span></a>
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu6">
-                        <li><a href="#">HOME1</a></li>
-                        <li><a href="#">HOME2</a></li>
-                        <li><a href="#">HOME3</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="material-icons">content_copy</i><span>pages</span></a>
-                    <ul class="collapse list-unstyled menu shadow" id="pageSubmenu7">
-                        <li><a href="#">HOME1</a></li>
-                        <li><a href="#">HOME2</a></li>
-                        <li><a href="#">HOME3</a></li>
-                    </ul>
-                </li>
+               
 
             </ul>
 
@@ -161,12 +137,13 @@
                  <div class="collapse navbar-collapse d-xl-block d-lg-block d-sm-none d-md-none d-none" id="navbarcollapse">
                     <ul class="nav navbar ms-auto">
 
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link" href="#" data-toggle="dropdown">
+                        <li class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop03" data-bs-toggle="dropdown" aria-expanded="true">
                                 <span class="material-icons">notifications</span>
                                 <span class="notifications">4</span>
                             </a>
-                            <ul class="dropdown-menu  mx-0  shadow">
+
+                            <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop03">
                                 <li class="dropdown-item pt-3 pb-3">
                                     <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
                                 </li>
@@ -189,29 +166,30 @@
                             <a class="nav-link" href="#"><span class="material-icons">apps</span></a>
                         </li>
 
+                       
                         <li class="nav-item dropdown ">
-                            <a class="nav-link" href="#" data-toggle="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop02" data-bs-toggle="dropdown" aria-expanded="true">
                                 <span class="material-icons">settings</span>
                             </a>
-                            <ul class="dropdown-menu  mx-0  shadow">
+
+                            <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop02">
                                 <li class="dropdown-item ">
                                     <a class=" d-flex gap-3 align-items-center" href="#">
                                         <i class="material-icons">settings</i><span>الإعدادات</span></a>
                                     </a>
                                 </li>
-                               
-                                
                             </ul>
                         </li>
 
                        
+                       
                         <li class="nav-item dropdown ">
-                            <a href="#" class="nav-link" id="dropdownUser1" data-toggle="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarTop01" data-bs-toggle="dropdown" aria-expanded="true">
                                 <span>مرحبا بك : احمد حمدان العنزي</span>
                                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="mr-5 rounded-circle"/>
                             </a>
 
-                            <ul class="dropdown-menu  mx-0  shadow">
+                            <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop01">
                                 <li class="dropdown-item ">
                                     <a class=" d-flex gap-3 align-items-center" href="#">
                                         <i class="material-icons">account_box</i><span>الملف الشخصي</span></a>
@@ -323,61 +301,118 @@
                 </div>
             </div>
 
-<!-------------------------------- row second -------------->
+
+<!-------------------------------- row chart -------------->
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card card-stats">
+                        <div class="card-header d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">لوحة القيادة</h1>
+                            <div class="btn-group me-2">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">مشاركة</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">تصدير</button>
+                              </div>
+                              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                <span data-feather="calendar"></span>
+                                هذا الأسبوع
+                              </button>
+
+                        </div>
+                        <div class="card-content">
+                            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card card-stats">
+                        <div class="card-header d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">لوحة القيادة</h1>
+                            <div class="btn-group me-2">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">مشاركة</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">تصدير</button>
+                              </div>
+                              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                <span data-feather="calendar"></span>
+                                هذا الأسبوع
+                              </button>
+
+                        </div>
+                        <div class="card-content">
+                            <canvas class="my-4 w-100" id="myChart2" width="900" height="380"></canvas>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>            
+
+<!-------------------------------- row thard -------------->
             <div class="row">
 
                 <div class="col-lg-7 col-md-12">
                     <div class="card" style="min-height:485px">
                         <div class="card-header card-header-text">
                             <h4 class="card-title"></h4>
-                            <p class="category">New employees on 15th December, 2016</p>
+                            <p class="category">موظفين جدد في 15 ديسمبر 2020</p>
                         </div>
                         <div class="card-content table-responsive">
                             <table class="table table-hover table-responsive">
                                 <thead class="text-primary">
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Full Name</th>
-                                        <th>Rank</th>
-                                        <th>Posion</th>
+                                        <th>الرقم</th>
+                                        <th>الاسم الكامل</th>
+                                        <th>الرتبة</th>
+                                        <th>الوظيفة</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Ahmad Alonazi</td>
-                                        <td>empl</td>
-                                        <td>Dev</td>
+                                        <td>١</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
-                                        <td>Kalad Hmad</td>
-                                        <td>empl</td>
-                                        <td>Dev</td>
+                                        <td>٢</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Abdulah ahmad</td>
-                                        <td>empl</td>
-                                        <td>Dev</td>
+                                        <td>٣</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
-                                        <td>Ahmad Alonazi</td>
-                                        <td>empl</td>
-                                        <td>Dev</td>
+                                        <td>٤</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
                                     </tr>
                                     <tr>
-                                        <td>5</td>
-                                        <td>Kalad Hmad</td>
-                                        <td>empl</td>
-                                        <td>Dev</td>
+                                        <td>٥</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
                                     </tr>
                                     <tr>
-                                        <td>6</td>
-                                        <td>Abdulah ahmad</td>
-                                        <td>empl</td>
-                                        <td>Dev</td>
+                                        <td>٦</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -385,6 +420,7 @@
                     </div>
                 </div>
 
+          
 
                 <div class="col-lg-5 col-md-12">
                     <div class="card" style="min-height: 485">
@@ -440,6 +476,12 @@
                 </div>
             </div>
             </div>
+
+
+            
+
+
+            
          </div><!--- Main-content End --------->
 
 
@@ -475,9 +517,16 @@
     </div>
     
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+
 
 
     <script type="text/javascript">
@@ -493,6 +542,9 @@
                 $("#sidebar-collapse .material-icons").toggleClass('d-none');
             }
         });
+
+
+    
 
 
 
@@ -511,8 +563,9 @@
         });
 
 
-    });
+     });
 
+   
     </script>
 
   </body>
