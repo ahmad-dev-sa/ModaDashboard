@@ -1,4 +1,13 @@
-boody,
+/* open-sans-regular - latin - modern browsers  */
+@font-face {
+  font-family: "Changa";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("css/fonts/Changa-VariableFont_wght.ttf") format("ttf"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+/* open-sans-regular - latin - modern browsers  */
+
+body,
 html {
   line-height: 1.8;
   font-family: "Changa", sans-serif;
@@ -328,19 +337,19 @@ a:focus {
 }
 .nav-item {
   color: #344f4d !important;
-  border-radius: 10%;
+  border-radius: 4px;
 }
 .nav-item:hover {
   background-color: rgba(0, 0, 0, 0.09);
-  border-radius: 10%;
+  border-radius: 4px;
 }
 .nav-item:focus {
   background-color: rgba(0, 0, 0, 0.09);
-  border-radius: 10%;
+  border-radius: 4px;
 }
 .nav-item.active {
   background-color: rgba(0, 0, 0, 0.09);
-  border-radius: 10%;
+  border-radius: 4px;
 }
 
 .dropdown-item a {
@@ -653,7 +662,8 @@ footer .copyright {
     margin: 5px 0;
     top: 0;
     border: 1px solid #dcd9d9;
-    border-radius: 3px;
+    border-right: 5px solid #344f4d !important;
+    border-radius: 0px 0px 4px 4px;
     padding: 10px;
     z-index: 4;
   }
@@ -683,11 +693,13 @@ footer .copyright {
     visibility: visible;
     transition: all 150ms linear;
     min-width: 15rem;
-    left: 0px;
+    left: 10px;
     right: auto;
     top: 10px;
     top: 58px;
     opacity: 1;
+    border-top: 5px solid #344f4d !important;
+    border-radius: 0px 0px 4px 4px;
   }
 }
 
