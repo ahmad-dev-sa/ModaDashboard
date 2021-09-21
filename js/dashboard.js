@@ -34,9 +34,9 @@
         ],
         lineTension: 0,
         backgroundColor: 'transparent',
-        borderColor: '#007bff',
+        borderColor: '#344f4d',
         borderWidth: 4,
-        pointBackgroundColor: '#007bff'
+        pointBackgroundColor: '#344f4d'
       }]
     },
     options: {
@@ -54,7 +54,7 @@
   })
 
   var myChart2 = new Chart(ctx2, {
-    type: 'line',
+    type: 'bar',
     data: {
       labels: [
         'الأحد',
@@ -76,10 +76,10 @@
           12034
         ],
         lineTension: 0,
-        backgroundColor: 'transparent',
-        borderColor: '#007bff',
+        backgroundColor: '#344f4d',
+        borderColor: '#344f4d',
         borderWidth: 4,
-        pointBackgroundColor: '#007bff'
+        pointBackgroundColor: '#344f4d'
       }]
     },
     options: {
