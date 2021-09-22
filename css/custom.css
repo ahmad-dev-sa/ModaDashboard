@@ -22,6 +22,10 @@ html {
   --bg-top-navbar: #b3bbbe;
   --bg-side-navbar: #344f4d;
 
+  --color-text-table-header: #ffffff;
+  --bg-text-table-header: #344f4d;
+  --color-text-table-body: #344f4d;
+
   --bg-color-sidebar-menu: #fff;
   --color-text-sidebar-menu: #344f4d;
   --border-right-sidebar-menu: 5px solid #344f4d !important;
@@ -76,6 +80,10 @@ html[data-theme="dark"] {
   --bg-top-navbar: #344f4d;
   --bg-side-navbar: #485b5b;
   --bg-card: #b3bbbe;
+
+  --color-text-table-header: #344f4d;
+  --bg-text-table-header: #ffffff;
+  --color-text-table-body: #ffffff;
 
   --bg-color-sidebar-menu: #1f3331;
   --color-text-sidebar-menu: #ffffff;
@@ -718,6 +726,21 @@ html.transition *:after {
 .steamline .sl-item p {
   font-size: 14px;
   color: #333;
+}
+
+/*============================================================================
+   Table Header and Body
+==============================================================================*/
+
+.text-table-header {
+  color: var(--color-text-table-header);
+  background-color: var(--bg-text-table-header);
+  padding: 10px 0px;
+}
+
+.text-table-body {
+  color: var(--color-text-table-body);
+  padding: 10px;
 }
 
 /*============================================================================
