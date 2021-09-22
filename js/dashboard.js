@@ -36,7 +36,7 @@
         backgroundColor: 'transparent',
         borderColor: '#344f4d',
         borderWidth: 4,
-        pointBackgroundColor: '#344f4d'
+        pointBackgroundColor: '#109856'
       }]
     },
     options: {
@@ -79,7 +79,7 @@
         backgroundColor: '#344f4d',
         borderColor: '#344f4d',
         borderWidth: 4,
-        pointBackgroundColor: '#344f4d'
+        pointBackgroundColor: '#109856'
       }]
     },
     options: {
