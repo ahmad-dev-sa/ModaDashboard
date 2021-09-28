@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl" >
+<html lang="ar" dir="rtl" data-theme="light" >
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,7 +26,7 @@
              </div>
 
 
-             <ul class="list-unstyled components" id="myGroup">
+             <ul class="list-unstyled components" id="myGroupsidebar">
                  <li class="active">
                     <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span> الأنظمة والصلاحيات</span></a>
                  </li>
@@ -42,22 +42,22 @@
                          </ul>
                      </li>
 
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#" class="dashboard"><i class="material-icons">apps</i><span>apps</span></a>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block d-none">
+                        <a href="#" class="dashboard"><i class="material-icons">apps</i><span>التطبيقات</span></a>
                      </li>
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#" class="dashboard"><i class="material-icons">person</i><span>user</span></a>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block d-none">
+                        <a href="#" class="dashboard"><i class="material-icons">person</i><span>المستخدم</span></a>
                      </li>
-                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
-                        <a href="#" class="dashboard"><i class="material-icons">settings</i><span>setting</span></a>
+                     <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block d-none">
+                        <a href="#" class="dashboard"><i class="material-icons">settings</i><span>الإعدادات</span></a>
                      </li>
 
                  </div>
 
 
                  <li class="dropdown">
-                    <a href="#" id="CloseAll" data-bs-toggle="collapse" data-bs-target="#pageSubmenu1" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu1">
-                    <i class="material-icons">aspect_ratio</i><span>نظام الموظفين</span></a>
+                    <a href="#" id="CloseAll" data-bs-toggle="collapse" data-bs-target="#pageSubmenu1" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu1">
+                    <i class="material-icons">person</i><span>نظام الموظفين</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu1">
                         <li><a href="#">الصفحة الرئيسية</a></li>
                         <li><a href="#">إضافة موظف جديد</a></li>
@@ -66,8 +66,8 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu2" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu2">
-                    <i class="material-icons">apps</i><span>إدارة المهام</span></a>
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu2" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu2">
+                    <i class="material-icons">format_list_bulleted</i><span>إدارة المهام</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu2">
                         <li><a href="#">الصفحة الرئيسية</a></li>
                         <li><a href="#">التقرير والأحصائيات</a></li>
@@ -75,8 +75,8 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu3" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu3">
-                    <i class="material-icons">equalizer</i><span>الترميز والتصنيفات</span></a>
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu3" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu3">
+                    <i class="material-icons">grid_view</i><span>الترميز والتصنيفات</span></a>
                     
                     <ul class="collapse list-unstyled menu " id="pageSubmenu3">
                         <li><a href="#">إدارة ترميز الرتب والوظائف</a></li>
@@ -87,12 +87,12 @@
                 </li>
 
                 <li class="active">
-                    <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span>التحكم والأمان</span></a>
+                    <a href="#" class="dashboard"><i class="material-icons">security</i><span>التحكم والأمان</span></a>
                  </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu4" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu4">
-                    <i class="material-icons">extension</i><span>إدارة المستخدمين</span></a>
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu4" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu4">
+                    <i class="material-icons">people</i><span>إدارة المستخدمين</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu4">
                         <li><a href="#">استعلام المستخدمين</a></li>
                         <li><a href="#">تسجيل مستخدم جديد</a></li>
@@ -101,33 +101,21 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu5" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu5">
-                    <i class="material-icons">border_color</i><span>إدارة الصلاحيات</span></a>
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu5" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu5">
+                    <i class="material-icons">admin_panel_settings</i><span>إدارة الصلاحيات</span></a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu5">
                         <li><a href="#">استعلام الصلاحيات</a></li>
                         <li><a href="#">إضافة صلاحية جديدة</a></li>
                     </ul>
                 </li>
 
-                <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu6" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu6">
-                    <i class="material-icons">grid_on</i><span>table</span></a>
-                    <ul class="collapse list-unstyled menu " id="pageSubmenu6">
-                        <li><a href="#">HOME1</a></li>
-                        <li><a href="#">HOME2</a></li>
-                        <li><a href="#">HOME3</a></li>
-                    </ul>
-                </li>
 
-                <li class="dropdown">
-                    <a href="#" data-bs-toggle="collapse" data-bs-target="#pageSubmenu7" aria-expanded="true" class="dropdown-toggle" aria-controls="pageSubmenu7">
-                    <i class="material-icons">content_copy</i><span>pages</span></a>
-                    <ul class="collapse list-unstyled menu " id="pageSubmenu7">
-                        <li><a href="#">HOME1</a></li>
-                        <li><a href="#">HOME2</a></li>
-                        <li><a href="#">HOME3</a></li>
-                    </ul>
-                </li>
+                
+
+
+                
+
+               
 
             </ul>
 
@@ -235,51 +223,148 @@
 <!-------------------------------- main-content -------------->
          <div class="main-content">
 
-
-
-
             <div class="row">
-
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="card card-stats">
-                        <div class="card-content text-center">
-                            <h1>عنوان الصفحة</h1>
+                        <div class="card-content">
+                           
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="card-title text-center">عنوان الصفحة</h3>
+                                    <div class="d-flex ">
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-primary">إضافة قسم جديد</button>
+                                            <button type="button" class="btn btn-outline-primary">طباعة تقرير</button>
+                                            <button type="button" class="btn btn-outline-primary">عرض جميع التقارير</button>
+                                          </div>
+                                    </div>
+                                   
+                                </div>
+                              
                         </div>
-                      
                     </div>
                 </div>
-
             </div>
 
-              
 
-<!-------------------------------- row second -------------->
             <div class="row">
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="card" style="min-height:485px">
-                        <div class="card-header card-header-text">
-                            <h4 class="card-title"></h4>
-                            <p class="category">عنوان الصفحة</p>
-                        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card card-stats">
                         <div class="card-content">
+                                             
 
-
-
-<!-------------------------------- here contant page محتوى الصفحة -------------->
+                            <table class="table table-hover table-responsive">
+                                <thead class="text-table-header">
+                                    <tr class="text-center">
+                                        <th>الرقم</th>
+                                        <th>الاسم الكامل</th>
+                                        <th>الرتبة</th>
+                                        <th>الوظيفة</th>
+                                        <th>الإجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-table-body  text-center">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>احمد حمدان العنزي</td>
+                                        <td>متعاقد</td>
+                                        <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary save" data-bs-toggle="modal" data-bs-target="#SaveModal">تعديل</button>
+                                            <button type="button" class="btn btn-danger delete" data-bs-toggle="modal" data-bs-target="#DeletModal">حذف</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                           
                         </div>
                     </div>
                 </div>
-
             </div>
-<!-------------------------------- end row second -------------->
+               
+
+
+               
+
+                
 
 
 
+          
+
+<!-- Modal -->
+<div class="modal fade" id="DeleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">التأكيد</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          هل انت متأكد من عملية الحذف
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء الامر</button>
+          <button type="button" class="btn btn-danger">نعم نفذ عملية الحذف </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+            
 
+
+            
          </div><!--- Main-content End --------->
 
 
@@ -289,44 +374,105 @@
 <footer class="card">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <nav class="d-flex">
+
+
+
+            <div class="col-lg-6  col-md-6 col-sm-12 pt-3 d-flex justify-content-start">
+                <span class="title-type"> اختر نوع القالب </span>
+                    <div class="toggle-container">
+                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                    </div>
+            </div>
+            <div class="col-lg-6  col-md-6 col-sm-12  d-flex justify-content-end pb-2">
+                <nav>
                     <ul class="m-0 p-0">
                         <li><a href="#">الصفحة الرئيسية</a></li>
                         <li><a href="#">عن النظام</a></li>
-                       
                     </ul>  
                 </nav>
             </div>
-
-            <div class="col-md-6">
-                <p class="copyright d-flex justify-content-end">
-                    &copy; جميع الحقوق محفوظة للمركز
-                    <a href="#">تصميم وتطوير</a> لوحة التحكم النظام
+            <hr class="pt-1">
+            <div class="col-lg-12  col-md-12 col-sm-12 d-flex justify-content-center">
+                <p class="copyright d-flex ">
+                    &copy;  جميع الحقوق محفوظة لـ احمد العنزي 
+                     لوحة التحكم النظام
                 </p>
             </div>
+
         </div>
     </div>
 </footer>
 
 
-
         </div>
     </div>
     
+<!-------------------------------- Start MOdal -------------->
 
+
+<!--- Delete Modal --------->
+    <div class="modal fade" id="DeletModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">تأكيد عملية الحذف</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>هل أنت متأكد من عملية الحذف؟</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء الامر</button>
+              <button type="button" class="btn btn-danger">نعم، نفذ عملية الحذف</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<!-------------------------------- footer -------------->
+
+<!--- Save Modal --------->
+    <div class="modal fade" id="SaveModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">تأكيد عملية الحفظ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>تمت عملية الأضافة بنجاح</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">أغلاق</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+ <!-------------------------------- End MOdal -------------->   
+    
     <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
 
-    <script type="text/javascript">
+
+
+<script type="text/javascript">
 
     $(document).ready(function(){
+
+        //This for Button collapse sidebar
         $("#sidebar-collapse").on('click', function(){
             $('#sidebar').toggleClass('active');
             $('#content').toggleClass('active');
-
+       // change icon when collapse sidebar
             if ($(".mydivclass")[0]){
                 $("#sidebar-collapse .material-icons").removeClass("d-none")
             } else {
@@ -334,9 +480,13 @@
             }
         });
 
+      //Colose Menue when click another
+        var $myGroup = $('#myGroupsidebar');
+        $myGroup.on('show.bs.collapse','.collapse', function() {
+        $myGroup.find('.collapse.show').collapse('hide');
+        });
 
-
-
+       //Mack top navbar when is active
         $('.top-navbar, #navbarcollapse').click(function(){
             if ($("show")[0]){
                 $('.nav-item .dropdown').addClass("active");
@@ -346,16 +496,50 @@
         });
 
        
-
         $(".more-button, .body-overlay").on('click', function(){
             $('#sidebar, .body-overlay').toggleClass('show-nav');
         });
 
+         //Modal script to  show the modal        
+        $('.delete').click(function(){
+            $('#DeletModal').modal('show');
+        });
+
+        $('.save').click(function(){
+            $('#SaveModal').modal('show');
+        });
+        
 
      });
+ 
+        //Darck Mode & Light Mode
+        var checkbox = document.querySelector('input[name=theme]');
 
-   
-    </script>
+        checkbox.addEventListener('change', function() {
+        if(this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+        } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+        }
+        })
+
+        let trans = () => {
+        document.documentElement.classList.add('transition');
+        window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+        }, 1000)
+        }
+
+        var myModal = document.getElementById('DeleteModal')
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        });
+
+        
+
+</script>
 
   </body>
 </html>

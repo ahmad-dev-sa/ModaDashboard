@@ -182,6 +182,30 @@ a:focus {
 }
 
 /*============================================================================
+   Primary Button Style
+==============================================================================*/
+
+.btn-outline-primary {
+  color: #344f4d !important;
+  border-color: #344f4d !important;
+}
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #344f4d !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #344f4d !important;
+  border: 0;
+}
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #385a58 !important;
+  border: 0;
+}
+
+/*============================================================================
    Light / Dark Mode switch style
 ==============================================================================*/
 
@@ -895,9 +919,7 @@ footer .copyright {
     transition: 0.3s;
     margin-top: 0;
   }
-  .navbar .nav-item:hover .nav-link {
-    color: rgb(148, 56, 56);
-  }
+
   .navbar .dropdown-menu.fade-down {
     top: 80%;
     transform: rotateX(-75deg);
