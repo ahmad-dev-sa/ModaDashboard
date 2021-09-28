@@ -22,6 +22,8 @@ html {
   --bg-top-navbar: #b3bbbe;
   --bg-side-navbar: #344f4d;
 
+  --color-more-button: #344f4d;
+
   --color-text-table-header: #ffffff;
   --bg-text-table-header: #344f4d;
   --color-text-table-body: #344f4d;
@@ -72,6 +74,8 @@ html {
   --color-topbar-actve: #344f4d;
 
   --color-text-info: #344f4d;
+
+  --color-text-copyright: #344f4d !important;
 }
 
 html[data-theme="dark"] {
@@ -81,9 +85,11 @@ html[data-theme="dark"] {
   --bg-side-navbar: #485b5b;
   --bg-card: #b3bbbe;
 
-  --color-text-table-header: #344f4d;
-  --bg-text-table-header: #ffffff;
-  --color-text-table-body: #ffffff;
+  --color-more-button: #ffffff;
+
+  --color-text-table-header: #ffffff;
+  --bg-text-table-header: #344f4d;
+  --color-text-table-body: #344f4d;
 
   --bg-color-sidebar-menu: #1f3331;
   --color-text-sidebar-menu: #ffffff;
@@ -118,8 +124,8 @@ html[data-theme="dark"] {
   --color-text-topbar: #eee;
   --color-text: #fff;
 
-  --color-headings: #1f3331;
-  --color-title: #fff;
+  --color-headings: #344f4d;
+  --color-title: #344f4d;
 
   --color-onHaver: #b3bbbe;
   --bg-sidebar-actve: rgba(31, 51, 49);
@@ -128,6 +134,8 @@ html[data-theme="dark"] {
   --color-topbar-actve: #344f4d;
 
   --color-text-info: #ffffff;
+
+  --color-text-copyright: #344f4d !important;
 }
 
 h1,
@@ -215,7 +223,7 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
-label {
+footer label {
   cursor: pointer;
   text-indent: -9999px;
   width: 52px;
@@ -226,7 +234,7 @@ label {
   position: relative;
 }
 
-label:after {
+footer label:after {
   content: "";
   position: absolute;
   top: 3px;
@@ -247,7 +255,7 @@ input:checked + label:after {
   transform: translateX(-100%);
 }
 
-label:active:after {
+footer label:active:after {
   width: 45px;
 }
 
@@ -461,7 +469,7 @@ html.transition *:after {
 }
 
 .navbar button span {
-  color: #344f4d;
+  color: var(--color-more-button);
 }
 #sidebar-collapse {
   border-radius: 10%;
@@ -799,6 +807,7 @@ footer .copyright {
   padding: 15px;
   font-size: 14px;
   margin: 0;
+  color: var(--color-text-copyright);
 }
 
 /*============================================================================
@@ -966,4 +975,35 @@ footer .copyright {
     transition: all 150ms linear;
     background-color: rgba(0, 0, 0, 0.5);
   }
+  #content {
+    background-color: var(--bg);
+  }
+}
+
+/*============================================================================
+  Login style
+==============================================================================*/
+
+.container form {
+  border-top: 10px solid #344f4d !important;
+}
+
+.btn_login {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 15px;
+  border-radius: 0;
+}
+
+.btn_login:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 15px;
+  border-radius: 0;
+}
+
+.rememberMe {
+  border-top: 1px solid #344f4d !important;
 }
