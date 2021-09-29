@@ -979,31 +979,3 @@ footer .copyright {
     background-color: var(--bg);
   }
 }
-
-/*============================================================================
-  Login style
-==============================================================================*/
-
-.container form {
-  border-top: 10px solid #344f4d !important;
-}
-
-.btn_login {
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 15px;
-  border-radius: 0;
-}
-
-.btn_login:hover {
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 15px;
-  border-radius: 0;
-}
-
-.rememberMe {
-  border-top: 1px solid #344f4d !important;
-}
