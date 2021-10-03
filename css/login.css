@@ -14,7 +14,7 @@
 body {
   -webkit-box-align: center;
   align-items: center;
-  background: #344f4d;
+  background: #344f4d !important;
   background: -webkit-linear-gradient(to right, #344f4d, #333333);
   background: linear-gradient(to right, #344f4d, #333333);
   display: -webkit-box;
@@ -28,79 +28,121 @@ body {
 /*============================================================================
   Login style
 ==============================================================================*/
+.title-login {
+  color: #344f4d !important;
+  font-weight: bold;
+}
 
-.contact-wrapper {
-  background: #ffffff;
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 0.75em;
-  padding: 4em 2em;
-  width: 60em;
-  height: 450px;
+a {
+  text-decoration: none;
+  color: #344f4d !important;
+}
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.left_side,
-.right_side {
-  width: 50%;
-  padding: 0 3em;
+.form-right i {
+  font-size: 100px;
 }
-.right_side > h2 {
-  color: #3e3f5e;
-  font-size: 1.75em;
-  text-align: center;
+.bg-right {
+  background-color: #344f4d !important;
 }
-form {
-  margin: 2em 0;
+.btn-Moda {
+  color: #fff !important;
+  background-color: #344f4d !important;
 }
-form > .form-row {
-  display: -webkit-box;
-  display: flex;
-  margin: 75em 0;
-  position: relative;
+.imge-right {
+  margin-bottom: 0;
 }
-form > .form-row > span {
-  background: #fff;
-  color: #344f4d;
-  display: inline-block;
+form .input-group .input-group-text {
+  color: #344f4d !important;
+}
+form label {
+  color: #344f4d !important;
+}
+
+form a {
+  color: #344f4d !important;
+}
+form a:hover {
+  color: #436865 !important;
+}
+form a:focus {
+  color: #344f4d !important;
+}
+form a:visited {
+  color: #344f4d !important;
+}
+form .form-check input {
+  background-color: #344f4d !important;
+  border: #344f4d solid 1px;
+}
+
+form #username,
+#Inputpassword {
+  border: #eee solid 1px !important;
+  padding: 15px;
+}
+
+form #username:focus,
+#Inputpassword:focus {
+  border: #344f4d solid 2px !important;
+}
+
+.Copyright {
+  text-align: center !important;
+}
+.Copyright p {
+  color: #344f4d !important;
+  font-weight: bold !important;
+  font-size: 12px;
+}
+.img-right {
+  padding-top: 313px;
+}
+/*============================================================================
+   Material-icons font-style
+==============================================================================*/
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
   font-weight: 400;
-  left: 1em;
-  padding: 0 0.5em;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transform: translateY(50%);
-  transform: translateY(50%);
-  top: 50%;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(/fonts/MaterialIcons-Regular.woff2) format("woff2"),
+    url(/fonts/MaterialIcons-Regular.woff) format("woff"),
+    url(/fonts/MaterialIcons-Regular.ttf) format("truetype");
 }
-form > .form-row > input,
-form > .form-row > button {
-  border-radius: 0.5em;
-  padding: 1em 0.5em;
-  width: 100%;
-  font-family: inherit;
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
 }
-form > .form-row > input {
-  font-weight: bold;
-  -webkit-transition: 100ms ease all;
-  transition: 100ms ease all;
-  width: 100%;
-}
-form > .form-row > input[type="text"],
-form > .form-row > input[type="password"] {
-  border: 0.075em solid #344f4d;
-}
-form > .form-row > input:valid + span {
-  top: 0;
-  font-size: 0.9rem;
-}
-form > .form-row > input:focus + span {
-  top: 0;
-  columns: #344f4d;
-  font-weight: 600;
-}
+
+/*============================================================================
+   Material-icons font-style End
+==============================================================================*/

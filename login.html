@@ -9,51 +9,73 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" integrity="sha384-beJoAY4VI2Q+5IPXjI207/ntOuaz06QYCdpWfWRv4lSFDyUSqsM0W+wiAMr2I185" crossorigin="anonymous">
     <!-- CSS3 -->
     <link rel="stylesheet" href="css/login.css">
-    <!-- Material Icons -->
-    <link href="css/material-design-icons.css"   rel="stylesheet">
+   <!-- Material Icons -->
+   <link href="css/material-design-icons.css"   rel="stylesheet">
+
 
 </head>
-<body class="body_login">
+<body>
+    <div class="login-page bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="bg-white shadow rounded">
+                        <div class="row">
+                            <div class="col-md-7 pe-0">
+                                <div class="form-left h-100 py-5 px-5">
+                                    <h3 class="mb-5 title-login">تسجيل الدخول</h3>
+                                    <hr class="mb-5 mt-3 pt-1"/>
+                                    <form action="" class="row g-4">
+                                            <div class="col-12">
+                                                <label for="username">اسم المستخدم<span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text"><span class="material-icons">person</span></div>
+                                                    <input type="text" class="form-control" id="username" placeholder="ادخل اسم المستخدم">
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-12">
+                                                <label for="Inputpassword">كلمة المرور<span class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text"><span class="material-icons">lock</span></div>
+                                                    <input type="password" class="form-control" id="Inputpassword"  placeholder="ادخل كلمة المرور">
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                                                    <label class="form-check-label" for="inlineFormCheck">ذكرني</label>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm-6">
+                                                <a href="#" class="float-end text-primary">هل نسيت كلمة المرور؟</a>
+                                            </div>
 
-
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-6 offset-md-3 ">
-            
-            <form accept="" class="shadow p-4">  
-                <div class="mb-5 mt-5 text-center">
-                    <h3>تسجيل الدخول</h3>
+                                               
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-Moda btn-block px-5 mt-4">تسجيل الدخول</button>
+                                            </div>
+                                           
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ps-0 d-none d-md-block ">
+                                <div class="form-right h-100 bg-right text-white text-center img-right">
+                                   <img src="/img/undraw_Login_re_4vu2.svg" class="imge-right" height="200px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Copyright">
+                        <p class="mt-5">جميع الحقوق محفوظة للمركز</p>
+                    </div>
+                    
                 </div>
-                <hr class="devide_lgin mb-5">                
-                <div class="mb-3">
-                    <label for="username">اسم المستخدم</label>
-                    <input type="username" class="form-control form-control-lg" name="username" id="username" placeholder="اسم المستخدم هنا">
-                </div>
-
-                <div class="mb-3">
-                    <label for="Password">كلمة المرور</label>
-                    <input type="password" class="form-control form-control-lg" name="password" id="Password" placeholder="كلمة المرور هنا">
-                </div>
-
-                <label class="mb-5 ">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">تذكرني</label>
-                      </div>
-                </label>
-               
-                 
-
-                <a href="#" class="float-end text-decoration-none ">إعادة كلمة المرور</a>
-
-                <div class="d-grid gap-2 mb-3">
-                    <button type="submit" class="btn btn-primary btn_login">تسجيل الدخول</button>
-                </div>
-
-            </form>
+            </div>
         </div>
     </div>
-</div>
 
  
     
