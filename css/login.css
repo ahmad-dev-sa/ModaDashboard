@@ -31,6 +31,13 @@ body {
 .title-login {
   color: #344f4d !important;
   font-weight: bold;
+  text-align: center;
+}
+.logo-login {
+  text-align: center;
+}
+.logo-login img {
+  width: 150px;
 }
 
 a {
@@ -84,7 +91,7 @@ form .form-check input {
 form #username,
 #Inputpassword {
   border: #eee solid 1px !important;
-  padding: 15px;
+  padding: 10px;
 }
 
 form #username:focus,
@@ -102,6 +109,15 @@ form #username:focus,
 }
 .img-right {
   padding-top: 313px;
+}
+
+.bg-login-image {
+  background: url(/img/bg_login.jpg);
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*============================================================================
    Material-icons font-style
