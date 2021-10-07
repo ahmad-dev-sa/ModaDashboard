@@ -57,7 +57,11 @@
 
                  <li class="dropdown">
                     <a href="#" id="CloseAll" data-bs-toggle="collapse" data-bs-target="#pageSubmenu1" aria-expanded="false" class="dropdown-toggle" aria-controls="pageSubmenu1">
-                    <i class="material-icons">person</i><span>نظام الموظفين</span></a>
+                    <i class="material-icons">person</i><span>نظام الموظفين</span>
+
+                    <span class="caret"></span>
+
+                  </a>
                     <ul class="collapse list-unstyled menu " id="pageSubmenu1">
                         <li><a href="#">الصفحة الرئيسية</a></li>
                         <li><a href="#">إضافة موظف جديد</a></li>
@@ -538,71 +542,6 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
     <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
-
-
-
-<script type="text/javascript">
-
-    $(document).ready(function(){
-
-        //This for Button collapse sidebar
-        $("#sidebar-collapse").on('click', function(){
-            $('#sidebar').toggleClass('active');
-            $('#content').toggleClass('active');
-       // change icon when collapse sidebar
-            if ($(".mydivclass")[0]){
-                $("#sidebar-collapse .material-icons").removeClass("d-none")
-            } else {
-                $("#sidebar-collapse .material-icons").toggleClass('d-none');
-            }
-        });
-
-      //Colose Menue when click another
-        var $myGroup = $('#myGroupsidebar');
-        $myGroup.on('show.bs.collapse','.collapse', function() {
-        $myGroup.find('.collapse.show').collapse('hide');
-        });
-
-       //Mack top navbar when is active
-        $('.top-navbar, #navbarcollapse').click(function(){
-            if ($("show")[0]){
-                $('.nav-item .dropdown').addClass("active");
-            } else {
-                $('.nav-item .dropdown').removeClass("active");
-            }
-        });
-
-       
-        $(".more-button, .body-overlay").on('click', function(){
-            $('#sidebar, .body-overlay').toggleClass('show-nav');
-        });
-
-
-     });
- 
-        //Darck Mode & Light Mode
-        var checkbox = document.querySelector('input[name=theme]');
-
-        checkbox.addEventListener('change', function() {
-        if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-        } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-        }
-        })
-
-        let trans = () => {
-        document.documentElement.classList.add('transition');
-        window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-        }, 1000)
-        }
-
-</script>
-
-  </body>
 </html>
