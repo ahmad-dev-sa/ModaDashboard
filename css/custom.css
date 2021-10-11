@@ -564,17 +564,10 @@ html.transition *:after {
   border-radius: 0px;
 }
 
-.dropdown-item {
-  padding: 1px 0 !important;
-}
-
 .dropdown-item a {
   color: var(--color-text-dropdown-menu) !important;
-  padding: 10px 5px !important;
 }
-.dropdown-item a p {
-  font-size: 12px !important;
-}
+
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color: var(--bg-topbar-actve) !important;
@@ -841,64 +834,6 @@ footer .copyright {
 }
 
 /*============================================================================
-   Dropdown Button Chart start
-==============================================================================*/
-
-/* Dropdown Button */
-.dropbtn {
-  color: white;
-  padding: 5px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0 !important;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #2980b9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  left: 10px;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 5;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
-}
-.show_R {
-  display: block;
-}
-
-/*============================================================================
    Madia querys start
 ==============================================================================*/
 
@@ -978,8 +913,8 @@ footer .copyright {
     transform: translate3d(0, 10px, 0);
     visibility: visible;
     transition: all 150ms linear;
-    min-width: 16rem;
-    left: 0;
+    min-width: 15rem;
+    left: 10px;
     right: auto;
     top: 58px;
     opacity: 1;
@@ -987,20 +922,13 @@ footer .copyright {
     border-radius: 0px 0px 4px 4px;
     background-color: var(--bg-dropdown-menu);
     animation: cubic-bezier(0.075, 0.82, 0.165, 1);
-    padding: 15px 15px !important;
   }
-  .dropdown-item:hover {
-    background-color: #000;
-  }
+  
 
+  
   .menu {
     padding: 5px 0px !important;
     background-color: rgba(31, 51, 49);
-  }
-
-  .navbar .dropdown-menu-end {
-    right: 0;
-    left: auto;
   }
 }
 

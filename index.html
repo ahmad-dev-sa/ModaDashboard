@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>لوحة التحكم</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" integrity="sha384-beJoAY4VI2Q+5IPXjI207/ntOuaz06QYCdpWfWRv4lSFDyUSqsM0W+wiAMr2I185" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" >
     <!-- CSS3 -->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Material Icons -->
@@ -18,6 +18,7 @@
 <div class="wrapper">
         <div class="body-overlay"></div>
 <!-------------------------------- sidebar -->
+
 
          <nav class="sidebar active" id="sidebar">
              <div class="sidebar-header">
@@ -113,6 +114,13 @@
                 </li>
 
 
+                
+
+
+                
+
+               
+
             </ul>
 
          </nav>
@@ -146,21 +154,13 @@
                             </a>
 
                             <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop03">
-                                <li class="dropdown-item pt-3 pb-3 pl-0 pr-0">
-                                    <a class=" d-flex gap-3 align-items-center " href="#" >
-                                        <span class="material-icons text-danger">warning</span>
-                                        <small>لديك اشعارات عن الصلاحيات الرجاد  <br/> الضغط هنا لمشاهدة التفصيل</small>
-                                    </a>
-                                </li>
-                                <li class="dropdown-item pt-3 pb-3 pl-0 pr-0">
-                                    <a class=" d-flex gap-3 align-items-center" href="#">
-                                        <span class="material-icons text-warning">error</span>
-                                        <small>This line of text is meant <br/> to be treated as fine print.</small>
-                                    </a>
-                                    
+                                <li class="dropdown-item pt-3 pb-3">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
                                 </li>
                                 <li class="dropdown-item pt-3 pb-3">
-                                    
+                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                </li>
+                                <li class="dropdown-item pt-3 pb-3">
                                     <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
                                 </li>
                                 <li class="dropdown-item pt-3 pb-3">
@@ -320,17 +320,7 @@
                     <div class="card card-stats">
                         <div class="card-header d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                             <h1 class="h2">لوحة القيادة</h1>
-                           
-                            
-                              <div class="dropdown" id="dropdown1">
-                                <button class="btn btn btn-primary dropbtn" id="buttonL">اختر من القائمة</button>
-                                <div id="dropdownButtonChart" class="dropdown-content">
-                                  <a href="#">Link 1</a>
-                                  <a href="#">Link 2</a>
-                                  <a href="#">Link 3</a>
-                                </div>
-                              </div>
-                              
+                          
 
                         </div>
                         <div class="card-content">
@@ -348,14 +338,8 @@
                     <div class="card card-stats">
                         <div class="card-header d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                             <h1 class="h2">لوحة القيادة</h1>
-                            <div class="dropdown" > 
-                                <button  class="btn btn btn-primary dropbtn" id="buttonR">اختر من القائمة</button>
-                                <div id="dropdownButtonChart" class="dropdown-content2">
-                                  <a href="#">Link 1</a>
-                                  <a href="#">Link 2</a>
-                                  <a href="#">Link 3</a>
-                                </div>
-                              </div>
+                            
+
                         </div>
                         <div class="card-content">
                             <canvas class="my-4 w-100" id="myChart2" width="900" height="380"></canvas>
@@ -537,12 +521,12 @@
     </div>
     
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="js/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/main.js"></script>
 </body>
