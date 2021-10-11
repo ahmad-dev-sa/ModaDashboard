@@ -30,17 +30,34 @@ $(document).ready(function(){
         }
     });
 
+    
 
+    $('#buttonR').click(function(){
+        if ($("show_R")[0]){
+            $("#dropdownButtonChart, .dropdown-content").removeClass("show_R");
+        }else{
+            $("#dropdownButtonChart, .dropdown-content").addClass("show_R");
+        }
+    });
+
+    $('#buttonL').click(function(){
+        if ($("show_R")[0]){
+            $("#dropdownButtonChart, .dropdown-content2").removeClass("show_R");
+        }else{
+            $("#dropdownButtonChart, .dropdown-content2").addClass("show_R");
+        }
+    });
+
+    
+    
+//document.getElementById("dropdownButtonChart2").classList.toggle("show"); 
+
+
+    
       
     $(".more-button, .body-overlay").on('click', function(){
         $('#sidebar, .body-overlay').toggleClass('show-nav');
     });
-
-
-
-
-    
-
 
 
 
@@ -66,3 +83,22 @@ $(document).ready(function(){
     document.documentElement.classList.remove('transition')
     }, 1000)
     }
+
+
+
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }else if(openDropdown.classList.contains('show_R')){
+            openDropdown.classList.remove('show_R');
+        }
+      }
+    }
+  }
