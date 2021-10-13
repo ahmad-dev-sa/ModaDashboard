@@ -88,14 +88,14 @@ form .form-check input {
   border: #344f4d solid 1px;
 }
 
-form #username,
-#Inputpassword {
+form #UserName,
+#Password {
   border: #eee solid 1px !important;
   padding: 10px;
 }
 
-form #username:focus,
-#Inputpassword:focus {
+form #UserName:focus,
+#Password:focus {
   border: #344f4d solid 2px !important;
 }
 
