@@ -1,4 +1,16 @@
 $(document).ready(function(){
+    
+    //disabled all button they are not need to post back
+    $(".active2, .dashboard").click(function() {
+        $(this).attr("disabled", "disabled");
+    });
+    $("#dropbtn").click(function() {
+        $(this).attr("disabled", "disabled");
+    });
+    $("#navbar-brand").click(function() {
+        $(this).attr("disabled", "disabled");
+    });
+
 
     
 

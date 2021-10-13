@@ -53,7 +53,8 @@ html {
   --bg-card: #ffffff;
   --color-text-card: rgba(0, 0, 0, 0.87);
 
-  --color-text-navbar-brand: #1f3332;
+  --color-text-navbar-brand: #344f4d;
+  --navbar-brand-hover: #344f4d;
 
   --icon-color-sidebar: #ffffff;
   --icon-color-topbar: #344f4d;
@@ -77,7 +78,29 @@ html {
 
   --color-text-copyright: #344f4d !important;
 
-  --color-text-btn-normal:#344f4d;
+  --color-text-btn-normal: #344f4d;
+
+  /* Colors  */
+  --primary: #344f4d !important;
+  --primary2: #1f3331 !important;
+  --secondary: #6c757d;
+  --secondary2: #54585c;
+  --success: #28a745;
+  --success2: #08681e;
+  --info: #17a2b8;
+  --info2: #056675;
+  --warning: #ffc107;
+  --warning2: #bb8e06;
+  --danger: #dc3545;
+  --danger2: #770d18;
+  --light: #f8f9fa;
+  --light2: #d6d6d6a8;
+  --dark: #343a40;
+  --dark2: #2a3036;
+
+  --color-text-btn: #ffffff;
+
+  /* End Colors  */
 }
 
 html[data-theme="dark"] {
@@ -115,7 +138,8 @@ html[data-theme="dark"] {
 
   --color-text-hover: #fff;
 
-  --color-text-navbar-brand: #eee;
+  --color-text-navbar-brand: #fff;
+  --navbar-brand-hover: #fff;
 
   --icon-color-sidebar: #ffffff;
   --icon-color-topbar: #fff;
@@ -139,7 +163,30 @@ html[data-theme="dark"] {
 
   --color-text-copyright: #344f4d !important;
 
-  --color-text-btn-normal:#ffffff !important;
+  --color-text-btn-normal: #ffffff !important;
+
+  /* Colors  */
+
+  --primary: #1f3331 !important;
+  --primary2: #344f4d !important;
+  --secondary2: #6c757d;
+  --secondary: #54585c;
+  --success2: #28a745;
+  --success: #08681e;
+  --info2: #17a2b8;
+  --info: #056675;
+  --warning2: #ffc107;
+  --warning: #bb8e06;
+  --danger2: #dc3545;
+  --danger: #770d18;
+  --light2: #f8f9fa;
+  --light: #d6d6d6a8;
+  --dark2: #343a40;
+  --dark: #2a3036;
+
+  --color-text-btn: #eeeeee;
+
+  /* End Colors  */
 }
 
 h1,
@@ -193,27 +240,181 @@ a:focus {
   transition: all 0.3s;
 }
 
+.warning-alert {
+  color: var(--warning) !important;
+}
+.danger-alert {
+  color: var(--danger) !important;
+}
+.primary-alert {
+  color: var(--primary) !important;
+}
+
 /*============================================================================
-   Primary Button Style
+   All Button Style
 ==============================================================================*/
 
+/* Outline Button start  */
+
 .btn-outline-primary {
-  color: #344f4d !important;
-  border-color: #344f4d !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
 }
 .btn-outline-primary:hover {
-  color: #fff !important;
-  background-color: #344f4d !important;
+  color: var(--color-text-btn) !important;
+  background-color: var(--primary2) !important;
 }
 
+.btn-outline-secondary {
+  color: var(--secondary) !important;
+  border: 1px solid var(--secondary) !important;
+}
+.btn-outline-secondary:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--secondary2) !important;
+}
+
+.btn-outline-success {
+  color: var(--success) !important;
+  border: 1px solid var(--success) !important;
+}
+.btn-outline-success:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--success2) !important;
+}
+
+.btn-outline-danger {
+  color: var(--danger) !important;
+  border: 1px solid var(--danger) !important;
+}
+.btn-outline-danger:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--danger2) !important;
+}
+
+.btn-outline-warning {
+  color: var(--warning) !important;
+  border: 1px solid var(--warning) !important;
+}
+.btn-outline-warning:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--warning2) !important;
+}
+
+.btn-outline-info {
+  color: var(--info) !important;
+  border: 1px solid var(--info) !important;
+}
+.btn-outline-info:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--info2) !important;
+}
+
+.btn-outline-light {
+  color: var(--dark) !important;
+  border: 1px solid var(--light) !important;
+}
+.btn-outline-light:hover {
+  color: var(--dark) !important;
+  background-color: var(--light2) !important;
+}
+
+.btn-outline-dark {
+  color: var(--dark) !important;
+  border: 1px solid var(--dark) !important;
+}
+.btn-outline-dark:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--dark2) !important;
+}
+/* Outline Button End 
+============================================================================
+ Outline Button start  */
 .btn-primary {
   color: #fff !important;
-  background-color: #344f4d !important;
+  background-color: var(--primary) !important;
   border: 0;
 }
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #385a58 !important;
+  background-color: var(--primary2) !important;
+  border: 0;
+}
+
+.btn-secondary {
+  color: var(--color-text-btn) !important;
+  background-color: var(--secondary) !important;
+  border: 0;
+}
+.btn-secondary:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--secondary2) !important;
+  border: 0;
+}
+
+.btn-success {
+  color: var(--color-text-btn) !important;
+  background-color: var(--success) !important;
+  border: 0;
+}
+.btn-success:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--success2) !important;
+  border: 0;
+}
+
+.btn-danger {
+  color: var(--color-text-btn) !important;
+  background-color: var(--danger) !important;
+  border: 0;
+}
+.btn-danger:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--danger2) !important;
+  border: 0;
+}
+
+.btn-warning {
+  color: var(--color-text-btn) !important;
+  background-color: var(--warning) !important;
+  border: 0;
+}
+.btn-warning:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--warning2) !important;
+  border: 0;
+}
+
+.btn-info {
+  color: var(--color-text-btn) !important;
+  background-color: var(--info) !important;
+  border: 0;
+}
+.btn-info:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--info2) !important;
+  border: 0;
+}
+
+.btn-light {
+  color: var(--dark) !important;
+  background-color: var(--light) !important;
+  border: 0;
+}
+.btn-light:hover {
+  color: var(--dark) !important;
+  background-color: var(--light2) !important;
+  border: 0;
+}
+
+.btn-dark {
+  color: var(--color-text-btn) !important;
+  background-color: var(--dark) !important;
+  border: 0;
+}
+.btn-dark:hover {
+  color: var(--color-text-btn) !important;
+  background-color: var(--dark2) !important;
   border: 0;
 }
 
@@ -393,7 +594,11 @@ html.transition *:after {
   color: var(--color-text-sidebar);
   background-color: rgba(255, 251, 251, 0.2);
 }
-
+#sidebar ul li.active2 > a {
+  color: var(--color-text-sidebar);
+  background-color: var(--bg-sidebar-actve);
+  cursor: default !important;
+}
 /*============================================================================
    dropdown-toggle
 ==============================================================================*/
@@ -426,7 +631,6 @@ html.transition *:after {
   color: #ffffff;
 }
 
-
 #sidebar ul li span {
   text-transform: capitalize;
   display: inline-block;
@@ -439,7 +643,7 @@ html.transition *:after {
   margin-right: 10px;
 }
 
-.dropdown .list-unstyled li a{
+.dropdown .list-unstyled li a {
   padding-right: 66px !important;
 }
 /*============================================================================
@@ -478,6 +682,10 @@ html.transition *:after {
   color: var(--color-text-navbar-brand);
   font-weight: bold;
   padding-right: 10px;
+}
+.navbar-brand:hover {
+  color: var(--navbar-brand-hover) !important;
+  cursor: default !important;
 }
 
 .navbar button {
@@ -594,13 +802,12 @@ html.transition *:after {
    main-content navbar-design End
 ==============================================================================*/
 
-
 /*============================================================================
    Dropup Button Top in Chart Cart Start
 ==============================================================================*/
 /* Dropup Button */
 .dropbtn {
-  background-color:#344f4d;
+  background-color: #344f4d;
   color: white;
   padding: 5px 16px;
   font-size: 16px;
@@ -610,7 +817,7 @@ html.transition *:after {
 /* The container <div> - needed to position the dropup content */
 .dropup {
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
 
 /* Dropup content (Hidden by Default) */
@@ -619,10 +826,10 @@ html.transition *:after {
   position: absolute;
   background-color: var(--bg-color-sidebar-menu) !important ;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   left: 10px;
-  top:40px;
+  top: 40px;
   color: var(--color-text-btn-normal);
 }
 
@@ -637,8 +844,7 @@ html.transition *:after {
 
 /* Change color of dropup links on hover */
 .dropup-content a:hover {
-  background-color:var(--bg-topbar-actve);
-  
+  background-color: var(--bg-topbar-actve);
 }
 
 /* Show the dropup menu on hover */
@@ -648,7 +854,7 @@ html.transition *:after {
 
 /* Change the background color of the dropup button when the dropup content is shown */
 .dropup:hover .dropbtn {
-  background-color:#1f3331 !important;
+  background-color: #1f3331 !important;
 }
 /*============================================================================
    Dropup Button Top in Chart Cart End
@@ -696,8 +902,6 @@ html.transition *:after {
 .card .card-header span {
   font-size: 100px;
   line-height: 0px;
-  
-  
 }
 
 .icon.icon-status {
@@ -839,9 +1043,88 @@ html.transition *:after {
   color: #333;
 }
 
-.bg-card{
+.bg-card {
   background-color: var(--bg-top-navbar) !important;
   padding: 0px !important;
+}
+
+/*============================================================================
+   Card dashbord Stutes
+==============================================================================*/
+
+.card-box {
+  position: relative;
+  color: #fff;
+  padding: 20px 10px 40px;
+  margin: 20px 0px;
+}
+.card-box:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.card-box .icon i {
+  font-size: 88px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+.card-box:hover .icon i {
+  font-size: 90px;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+.card-box .inner {
+  padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  white-space: nowrap;
+  padding: 0;
+  text-align: left;
+  color: var(--light) !important;
+}
+.card-box p {
+  font-size: 15px;
+  color: var(--light) !important;
+}
+.card-box .icon {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  right: 5px;
+  z-index: 0;
+  font-size: 72px;
+  color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  padding: 3px 0;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-decoration: none;
+}
+.card-box .card-box-footer i {
+  padding-top: 5px;
+}
+.card-box:hover .card-box-footer {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bg-blue {
+  background-color: var(--info) !important;
+}
+.bg-green {
+  background-color: var(--success) !important;
+}
+.bg-orange {
+  background-color: var(--warning) !important;
+}
+.bg-red {
+  background-color: var(--danger) !important;
 }
 
 /*============================================================================
@@ -997,9 +1280,7 @@ footer .copyright {
     background-color: var(--bg-dropdown-menu);
     animation: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-  
 
-  
   .menu {
     padding: 5px 0px !important;
     background-color: rgba(31, 51, 49);

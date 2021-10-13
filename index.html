@@ -27,7 +27,7 @@
 
 
              <ul class="list-unstyled components" id="myGroupsidebar">
-                 <li class="active">
+                 <li class="active2">
                     <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span> الأنظمة والصلاحيات</span></a>
                  </li>
                  <div class="small-screen navbar-display">
@@ -90,7 +90,7 @@
                     </ul>
                 </li>
 
-                <li class="active">
+                <li class="active2">
                     <a href="#" class="dashboard"><i class="material-icons">security</i><span>التحكم والأمان</span></a>
                  </li>
 
@@ -138,7 +138,7 @@
                      <span class="material-icons d-none">menu_open</span>
                  </button>
 
-                 <a class="navbar-brand" href="#" >لوحة التحكم</a>
+                 <a class="navbar-brand" id="navbar-brand">لوحة التحكم</a>
                  <button class="d-inline-block d-lg-none ms-auto more-button" type="button" data-toggle="collapse"
                  data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle">
                  <span class="material-icons">more_vert</span>
@@ -154,22 +154,29 @@
                             </a>
 
                             <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop03">
-                                <li class="dropdown-item pt-3 pb-3">
-                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="material-icons danger-alert">error</i><span>اشعار المستخدم بتنبية</span>
+                                    </a>
                                 </li>
-                                <li class="dropdown-item pt-3 pb-3">
-                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="material-icons warning-alert">warning</i><span>اشعار تحذيري</span>
+                                    </a>
                                 </li>
-                                <li class="dropdown-item pt-3 pb-3">
-                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-item ">
+                                    <a class=" d-flex gap-3 align-items-center" href="#">
+                                        <i class="auto_delete primary-alert"></i><span>اشعار  عملية حذف تالقائي</span>
+                                    </a>
                                 </li>
-                                <li class="dropdown-item pt-3 pb-3">
-                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
-                                </li>
-                                <li class="dropdown-item pt-3 pb-3">
-                                    <a class=" d-flex gap-3 align-items-center" href="#">You have 4 New Messages</a>
-                                </li>
+                               
+                              
+
                             </ul>
+
+                            
                         </li>
 
                         <li class="nav-item">
@@ -185,7 +192,7 @@
                             <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop02">
                                 <li class="dropdown-item ">
                                     <a class=" d-flex gap-3 align-items-center" href="#">
-                                        <i class="material-icons">settings</i><span>الإعدادات</span></a>
+                                        <i class="material-icons">settings</i><span>الإعدادات</span>
                                     </a>
                                 </li>
                             </ul>
@@ -202,18 +209,18 @@
                             <ul class="dropdown-menu  mx-0  shadow" aria-labelledby="navbarTop01">
                                 <li class="dropdown-item ">
                                     <a class=" d-flex gap-3 align-items-center" href="#">
-                                        <i class="material-icons">account_box</i><span>الملف الشخصي</span></a>
+                                        <i class="material-icons">account_box</i><span>الملف الشخصي</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item ">
                                     <a class=" d-flex gap-3 align-items-center" href="#">
-                                        <i class="material-icons">mail</i><span>الرسائل</span></a>
+                                        <i class="material-icons">mail</i><span>الرسائل</span>
                                     </a>
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li class="dropdown-item ">
                                     <a class=" d-flex gap-3 align-items-center" href="#">
-                                        <i class="material-icons">logout</i><span>تسجيل الخروج</span></a>
+                                        <i class="material-icons">logout</i><span>تسجيل الخروج</span>
                                     </a>
                                 </li>
                             </ul>
@@ -228,94 +235,70 @@
          <div class="main-content">
 
             <div class="row">
+                
+
+
 
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats">
-                        <div class="card-header">
-                            <div class="icon icon-status">
-                               <span class="material-icons text-success">group</span>
-                            </div>
+                    <div class="card-box bg-blue">
+                        <div class="inner">
+                            <h3> 60 </h3>
+                            <p> الموظفين </p>
                         </div>
-                        <div class="card-content">
-                            <p class="category"><strong>الموظفين</strong></p>
-                            <h3 class="card-title">60</h3>
+                        <div class="icon">
+                            <i class="material-icons">group</i>
                         </div>
-                        <div class="card-footer ">
-                            <div class="stats">
-                                <i class="material-icons">info</i>
-                                <a href="#">عرض جميع الموظفين في النظام</a>
-                            </div>
-                        </div>
+                        <a href="#" class="card-box-footer">عرض جميع الموظفين <i class="material-icons">info</i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats">
-                        <div class="card-header">
-                            <div class="icon icon-status">
-                               <span class="material-icons text-warning">reorder</span>
-                            </div>
+                    <div class="card-box bg-green">
+                        <div class="inner">
+                            <h3> 100 </h3>
+                            <p> المستخدمين </p>
                         </div>
-                        <div class="card-content">
-                            <p class="category"><strong>الطلبات</strong></p>
-                            <h3 class="card-title">200</h3>
+                        <div class="icon">
+                            <i class="material-icons">person</i>
                         </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons text-info">info</i>
-                                <a href="#">عرض جميع الطلبات</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats">
-                        <div class="card-header">
-                            <div class="icon icon-status">
-                               <span class="material-icons text-primary">description</span>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p class="category"><strong>المعاملات</strong></p>
-                            <h3 class="card-title">2000</h3>
-                        </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons text-info">info</i>
-                                <a href="#">عرض جميع المستخدمين</a>
-                            </div>
-                        </div>
+                        <a href="#" class="card-box-footer">عرض المستخدمين <i class="material-icons">info</i></a>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-stats">
-                        <div class="card-header">
-                            <div class="icon icon-status">
-                               <span class="material-icons text-danger">pending_actions</span>
-                            </div>
+                    <div class="card-box bg-orange">
+                        <div class="inner">
+                            <h3> 10 </h3>
+                            <p> المهام </p>
                         </div>
-                        <div class="card-content">
-                            <p class="category"><strong>التقرير</strong></p>
-                            <h3 class="card-title">200</h3>
+                        <div class="icon">
+                            <i class="material-icons">assignment</i>
                         </div>
-                        <div class="card-footer">
-                            <div class="stats">
-                                <i class="material-icons text-info">info</i>
-                                <a href="#">عرض جميع التقرير</a>
-                            </div>
-                        </div>
+                        <a href="#" class="card-box-footer">عرض جميع المهام <i class="material-icons">info</i></a>
                     </div>
                 </div>
-
-            
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card-box bg-red">
+                        <div class="inner">
+                            <h3> 50 </h3>
+                            <p> التقرير </p>
+                        </div>
+                        <div class="icon">
+                            <i class="material-icons">reorder</i>
+                        </div>
+                        <a href="#" class="card-box-footer">عرض  التقرير  <i class="material-icons">info</i></a>
+                    </div>
+                </div>
+    
+                
+              
 
 
 
 
             </div>
+
+
 
 
 <!-------------------------------- row chart -------------->
@@ -392,6 +375,7 @@
                                         <th>الاسم الكامل</th>
                                         <th>الرتبة</th>
                                         <th>الوظيفة</th>
+                                        <th>الإجراء</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-table-body">
@@ -400,36 +384,66 @@
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary ">تحديد</button>
+                                            <button type="button" class="btn btn-success">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary ">تحديد</button>
+                                            <button type="button" class="btn btn-success">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary ">تحديد</button>
+                                            <button type="button" class="btn btn-success">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary ">تحديد</button>
+                                            <button type="button" class="btn btn-success">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary ">تحديد</button>
+                                            <button type="button" class="btn btn-success">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
                                         <td>احمد حمدان العنزي</td>
                                         <td>متعاقد</td>
                                         <td>مصمم واجهات المستخدم</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary ">تحديد</button>
+                                            <button type="button" class="btn btn-success">تعديل</button>
+                                            <button type="button" class="btn btn-danger">حذف</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -496,6 +510,52 @@
 
 
             
+
+<!-------------------------------- row buttons -------------->
+
+<div class="row">
+
+    <div class="col-lg-12 col-md-12 col-sm-12"><!-- start buttons -->
+        <div class="card card-stats">
+            
+            <div class="card-content row">
+
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary ">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+                <div class="col-12 pt-5">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                 </div>
+                <div class="col-12 pt-5 d-grid gap-2">
+                    <button type="button" class="btn btn-primary ">Primary</button>
+                    <button type="button" class="btn btn-secondary ">Secondary</button>
+                    <button type="button" class="btn btn-success ">Success</button>
+                    <button type="button" class="btn btn-danger ">Danger</button>
+                    <button type="button" class="btn btn-warning ">Warning</button>
+                    <button type="button" class="btn btn-info ">Info</button>
+                    <button type="button" class="btn btn-light ">Light</button>
+                    <button type="button" class="btn btn-dark ">Dark</button>
+                </div>
+                
+            </div>
+        </div>
+    </div> <!-- end buttons -->
+</div>
+
 
 
             
