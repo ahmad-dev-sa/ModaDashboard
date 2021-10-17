@@ -1,106 +1,100 @@
 /* open-sans-regular - latin - modern browsers  */
-@font-face {
+/*@font-face {
   font-family: "Changa";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("css/fonts/Changa-VariableFont_wght.ttf") format("ttf"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  src: local(""), url("css/fonts/Changa-VariableFont_wght.ttf") format("ttf");*/ /* Chrome 26+, Opera 23+, Firefox 39+ */
+/*}*/
+/*@font-face {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Changa-VariableFont_wght.ttf') format('truetype');
+}*/
+@font-face {
+    font-family: 'DroidKufi-Bold';
+    src: url('../fonts/DroidKufi-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DroidKufi-Regular';
+    src: url('../fonts/DroidKufi-Regular.ttf') format('truetype');
 }
 
 body {
-  line-height: 1.8;
-  font-family: "Changa", sans-serif;
-  text-transform: capitalize;
-  font-weight: 400;
+    line-height: 1.8;
+    font-family: "DroidKufi-Regular", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    --link-hover-focus: #344f4d;
+    --bg: #eeeeee;
+    --bg-top-navbar: #b3bbbe;
+    --bg-side-navbar: #344f4d;
+    --color-more-button: #344f4d;
+    --color-text-table-header: #ffffff;
+    --bg-text-table-header: #344f4d;
+    --color-text-table-body: #344f4d;
+    --bg-color-sidebar-menu: #fff;
+    --color-text-sidebar-menu: #344f4d;
+    --border-right-sidebar-menu: 5px solid #344f4d !important;
+    --border-sidebar-menu: 1px solid #dcd9d9;
+    --color-text-dropdown-menu: #344f4d !important;
+    --color-active-hover-dropdown-menu: #344f4d !important;
+    --bg-active-hover-dropdown-menu: #344f4d34 !important;
+    --bg-dropdown-menu: #fff;
+    --bg-dropdown-item: #344f4d34 !important;
+    --color-text-dropdown-menu: #344f4d;
+    --color-border-top-dropdown-menu: 5px solid #1f3331 !important;
+    --color-text-hover: #344f4d;
+    --bg-notifications: #1f3331;
+    --color-notifications: #ffffff;
+    --border-notifications: 0px solid #b2bbbe;
+    --card-footer-border: 1px solid #eee;
+    --color-heading-card: #344f4d;
+    --bg-card: #ffffff;
+    --color-text-card: rgba(0, 0, 0, 0.87);
+    --color-text-navbar-brand: #344f4d;
+    --navbar-brand-hover: #344f4d;
+    --icon-color-sidebar: #ffffff;
+    --icon-color-topbar: #344f4d;
+    --color-icon-ststus-top: #344f4d;
+    --color-text-sidebar: #ffffff;
+    --color-text-topbar: #1f3332;
+    --color-text: #344f4d;
+    --color-headings: #1f3331;
+    --color-title: #344f4d;
+    --color-onHaver: #b3bbbe;
+    --bg-sidebar-actve: rgba(31, 51, 49);
+    --color-sidebar-actve: #ffffff;
+    --bg-topbar-actve: rgba(0, 0, 0, 0.09);
+    --color-topbar-actve: #344f4d;
+    --color-text-info: #344f4d;
+    --color-text-copyright: #344f4d !important;
+    --color-text-btn-normal: #344f4d;
+    /* Colors  */
+    --primary: #344f4d !important;
+    --primary2: #1f3331 !important;
+    --secondary: #6c757d;
+    --secondary2: #54585c;
+    --success: #28a745;
+    --success2: #08681e;
+    --info: #17a2b8;
+    --info2: #056675;
+    --warning: #ffc107;
+    --warning2: #bb8e06;
+    --danger: #dc3545;
+    --danger2: #770d18;
+    --light: #f8f9fa;
+    --light2: #d6d6d6a8;
+    --dark: #343a40;
+    --dark2: #2a3036;
+    --color-text-btn: #ffffff;
+    /* End Colors  */
 
-  --link-hover-focus: #344f4d;
-  --bg: #eeeeee;
-  --bg-top-navbar: #b3bbbe;
-  --bg-side-navbar: #344f4d;
-
-  --color-more-button: #344f4d;
-
-  --color-text-table-header: #ffffff;
-  --bg-text-table-header: #344f4d;
-  --color-text-table-body: #344f4d;
-
-  --bg-color-sidebar-menu: #fff;
-  --color-text-sidebar-menu: #344f4d;
-  --border-right-sidebar-menu: 5px solid #344f4d !important;
-  --border-sidebar-menu: 1px solid #dcd9d9;
-
-  --color-text-dropdown-menu: #344f4d !important;
-  --color-active-hover-dropdown-menu: #344f4d !important;
-  --bg-active-hover-dropdown-menu: #344f4d34 !important;
-
-  --bg-dropdown-menu: #fff;
-  --bg-dropdown-item: #344f4d34 !important;
-  --color-text-dropdown-menu: #344f4d;
-  --color-border-top-dropdown-menu: 5px solid #1f3331 !important;
-
-  --color-text-hover: #344f4d;
-
-  --bg-notifications: #1f3331;
-  --color-notifications: #ffffff;
-  --border-notifications: 0px solid #b2bbbe;
-
-  --card-footer-border: 1px solid #eee;
-  --color-heading-card: #344f4d;
-  --bg-card: #ffffff;
-  --color-text-card: rgba(0, 0, 0, 0.87);
-
-  --color-text-navbar-brand: #344f4d;
-  --navbar-brand-hover: #344f4d;
-
-  --icon-color-sidebar: #ffffff;
-  --icon-color-topbar: #344f4d;
-
-  --color-icon-ststus-top: #344f4d;
-
-  --color-text-sidebar: #ffffff;
-  --color-text-topbar: #1f3332;
-  --color-text: #344f4d;
-
-  --color-headings: #1f3331;
-  --color-title: #344f4d;
-
-  --color-onHaver: #b3bbbe;
-  --bg-sidebar-actve: rgba(31, 51, 49);
-  --color-sidebar-actve: #ffffff;
-  --bg-topbar-actve: rgba(0, 0, 0, 0.09);
-  --color-topbar-actve: #344f4d;
-
-  --color-text-info: #344f4d;
-
-  --color-text-copyright: #344f4d !important;
-
-  --color-text-btn-normal: #344f4d;
-
-  /* Colors  */
-  --primary: #344f4d !important;
-  --primary2: #1f3331 !important;
-  --secondary: #6c757d;
-  --secondary2: #54585c;
-  --success: #28a745;
-  --success2: #08681e;
-  --info: #17a2b8;
-  --info2: #056675;
-  --warning: #ffc107;
-  --warning2: #bb8e06;
-  --danger: #dc3545;
-  --danger2: #770d18;
-  --light: #f8f9fa;
-  --light2: #d6d6d6a8;
-  --dark: #343a40;
-  --dark2: #2a3036;
-
-  --color-text-btn: #ffffff;
-
-  /* End Colors  */
 }
 
 html[data-theme="dark"] {
@@ -250,15 +244,20 @@ a:focus {
   color: var(--primary) !important;
 }
 
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.border-primary {
+    border: 1px solid var(--primary) !important;
+}
 /*============================================================================
    All Button Style
 ==============================================================================*/
-
 /* Outline Button start  */
-
 .btn-outline-primary {
-  color: var(--primary) !important;
-  border: 1px solid var(--primary) !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
 }
 .btn-outline-primary:hover {
   color: var(--color-text-btn) !important;
@@ -522,6 +521,7 @@ html.transition *:after {
   position: relative;
   width: 100%;
   overflow: auto;
+
 }
 
 /*============================================================================
@@ -1073,20 +1073,22 @@ html.transition *:after {
   -webkit-transition: 1s;
 }
 .card-box .inner {
-  padding: 5px 10px 0 10px;
+  padding: 5px 10px 17px 10px;
 }
-.card-box h3 {
-  font-size: 27px;
-  font-weight: bold;
-  margin: 0 0 8px 0;
-  white-space: nowrap;
-  padding: 0;
-  text-align: left;
-  color: var(--light) !important;
-}
+    .card-box h3 {
+        font-size: 27px;
+        font-weight: bold;
+        margin: 0 0 8px 0;
+        white-space: nowrap;
+        padding: 0;
+        text-align: left;
+        color: var(--light) !important;
+    }
 .card-box p {
-  font-size: 15px;
-  color: var(--light) !important;
+    font-size: 28px;
+    font-weight:bold;
+    color: var(--light) !important;
+    text-align: left !important;
 }
 .card-box .icon {
   position: absolute;

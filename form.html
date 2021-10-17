@@ -375,7 +375,7 @@
                                     <div class="form-group">
                                         <div style="display: flex;">
                                             <label for="tBoxPromDate" class="control-label">تاريخ الترقية </label>
-                                            &nbsp;<asp:Label ID="Label3" Font-Size="18px" ForeColor="Red" runat="server" Text=""></asp:Label>
+                                            &nbsp;<Label ID="Label3" Font-Size="18px" ForeColor="Red" runat="server" Text=""></Label>
                                         </div>
                                         <input id="tBoxPromDate" runat="server" type="text" maxlength="10" autocomplete="off" class="form-control" placeholder="تاريخ الترقية" readonly aria-label="...">
                                     </div>
@@ -391,7 +391,7 @@
                                 <div class="col-md-2">
                                     <div class="form-group">
                                         <div style="display: flex;">
-                                            <label for="tBoxDocDate" class="control-label">تاريخ القرار</label>&nbsp;<asp:Label ID="Label4" Font-Size="18px" ForeColor="Red" runat="server" Text=""></asp:Label>
+                                            <label for="tBoxDocDate" class="control-label">تاريخ القرار</label>&nbsp;<aLabel ID="Label4" Font-Size="18px" ForeColor="Red" runat="server" Text=""></Label>
                                         </div>
                                         <input id="tBoxDocDate" runat="server" type="text" maxlength="10" autocomplete="off" class="form-control" placeholder="تاريخ القرار" readonly aria-label="...">
                                     </div>
@@ -405,9 +405,12 @@
                                         <div style="display: flex;">
                                             <label for="DDLAssignDept" class="control-label">الادارة المعين عليها</label>
                                         </div>
-                                        <asp:DropDownList ID="DDLAssignDept" runat="server"
-                                            AutoPostBack="true" AppendDataBoundItems="true" aria-describedby="ShowMsg3" Width="100%" Font-Bold="True" Font-Size="18px" CssClass="form-control">
-                                        </asp:DropDownList>
+                                        
+                                        <select runat="server" class="custom-select form-control" id="DDLAssignDept">
+                                            <option value="0" selected="selected">اختر...</option>
+                                            <option value=""></option>
+                                           
+                                          </select>
                                         <small id="ShowMsg3" class="form-text text-muted"></small>
                                     </div>
                                 </div>
@@ -420,9 +423,12 @@
                                         <div style="display: flex;">
                                             <label for="DDLWorkDept" class="control-label">الادارة المكلف بها</label>
                                         </div>
-                                        <asp:DropDownList ID="DDLWorkDept" runat="server"
-                                            AutoPostBack="true" AppendDataBoundItems="true" Width="100%" Font-Bold="True" Font-Size="18px" CssClass="form-control" OnSelectedIndexChanged="DDLWorkDept_SelectedIndexChanged">
-                                        </asp:DropDownList>
+                                        
+                                        <select runat="server" class="custom-select form-control" id="DDLWorkDept">
+                                            <option value="0" selected="selected">اختر...</option>
+                                            <option value=""></option>
+                                           
+                                          </select>
 
                                         <small id="ShowMsg4" class="form-text text-muted"></small>
                                     </div>
@@ -433,9 +439,12 @@
                                             <label for="DLLSection" class="control-label">القسم</label>
                                         </div>
                                         <div id="gr1" class="input-group mb-3">
-                                            <asp:DropDownList ID="DLLSection" runat="server" DataValueField="SectionId" DataTextField="SectionName"
-                                                AutoPostBack="true" AppendDataBoundItems="true" Width="100%" Font-Bold="True" Font-Size="18px" CssClass="form-control">
-                                            </asp:DropDownList>
+                                            
+                                            <select runat="server" class="custom-select form-control" id="DLLSection">
+                                                <option value="0" selected="selected">اختر...</option>
+                                                <option value=""></option>
+                                               
+                                              </select>
                                             <div class="input-group-prepend">
                                                 <button id="ShowModalAjax" class="btn btn-outline-secondary" type="button" runat="server" >جديد</button>
                                             </div>
@@ -489,12 +498,10 @@
             
             
             
-                            <%--Main Row--%>
-                            <%--========--%>
+                          
                             <div class="row">
                                 <div class="col-md-9">
             
-                                    <%--Row1--%>
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
@@ -529,9 +536,12 @@
                                                 <div style="display: flex;">
                                                     <label for="DDLJobStatus" class="control-label">الحالة الوظيفية</label>
                                                 </div>
-                                                <asp:DropDownList ID="DDLJobStatus" runat="server"
-                                                    AutoPostBack="true" AppendDataBoundItems="true" aria-describedby="ShowMsg5" Width="100%" Font-Bold="True" Font-Size="18px" CssClass="form-control">
-                                                </asp:DropDownList>
+                                               
+                                                <select runat="server" class="custom-select form-control" id="DDLJobStatus">
+                                                    <option value="0" selected="selected">اختر...</option>
+                                                    <option value=""></option>
+                                                   
+                                                  </select>
                                                 <small id="ShowMsg5" class="form-text text-muted"></small>
                                             </div>
                                         </div>
@@ -542,16 +552,19 @@
                                                     <label for="DDLEducation" class="control-label">المؤهل العلمي</label>
                                                 </div>
                                                 <div id="gr2" class="input-group mb-3">
-                                                    <asp:DropDownList ID="DDLEducation" runat="server" AppendDataBoundItems="true" Width="100%" Font-Bold="True" Font-Size="18px" CssClass="form-control">
-                                                        <asp:ListItem Value="0">اختر المؤهل العلمي</asp:ListItem>
-                                                        <asp:ListItem Value="1">ابتدائي</asp:ListItem>
-                                                        <asp:ListItem Value="2">متوسط</asp:ListItem>
-                                                        <asp:ListItem Value="3">ثانوي</asp:ListItem>
-                                                        <asp:ListItem Value="4">دبلوم</asp:ListItem>
-                                                        <asp:ListItem Value="5">جامعي</asp:ListItem>
-                                                        <asp:ListItem Value="6">ماجستير</asp:ListItem>
-                                                        <asp:ListItem Value="7">دكتوراه</asp:ListItem>
-                                                    </asp:DropDownList>
+                                                    
+                                                    <select runat="server" class="custom-select form-control" id="DDLEducation">
+                                                        <option value="0" selected="selected">اختر...</option>
+                                                        <option value=""></option>
+                                                        <option Value="0">اختر المؤهل العلمي</option>
+                                                        <option Value="1">ابتدائي</option>
+                                                        <option Value="2">متوسط</option>
+                                                        <option Value="3">ثانوي</option>
+                                                        <option Value="4">دبلوم</option>
+                                                        <option Value="5">جامعي</option>
+                                                        <optionm Value="6">ماجستير</option>
+                                                        <option Value="7">دكتوراه</option>
+                                                      </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -561,9 +574,12 @@
                                                 <div style="display: flex;">
                                                     <label for="DDLSpecia" class="control-label">التخصص</label>
                                                 </div>
-                                                <asp:DropDownList ID="DDLSpecia" runat="server"
-                                                    AutoPostBack="true" AppendDataBoundItems="true" aria-describedby="ShowMsg6" Width="100%" Font-Bold="True" Font-Size="18px" CssClass="form-control">
-                                                </asp:DropDownList>
+                                                
+                                                <select runat="server" class="custom-select form-control" id="DDLSpecia">
+                                                    <option value="0" selected="selected">اختر...</option>
+                                                    <option value=""></option>
+                                                   
+                                                  </select>
                                                 <small id="ShowMsg6" class="form-text text-muted"></small>
                                             </div>
                                         </div>
@@ -624,12 +640,13 @@
             
                                   
                                     <div class="row">
-                                        <div class="col-md-9">
+                                        <div class="col-md-12">
                                      <div class="form-group">
                                     <div style="display:flex;">
-                                        <label for="imageBrowe1" class="control-label">اختر الصورة</label>
+                                        <label for="imageBrowe1" class="control-label form-label ">اختر الصورة</label>
                                     </div>
-                                    <asp:FileUpload ID="imageBrowe1" Width="100%" data-buttonName="btn-primary" runat="server" data-buttonText="اختر ملف"/>
+                                    <asp:FileUpload ID="imageBrowe1" class="form-control form-control-lg mb-3" Width="100%" data-buttonName="btn-primary" runat="server" data-buttonText="اختر ملف"/>
+                                  
                                 </div>
             
             
@@ -649,7 +666,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 mt-5">
             
                                     <div class="row">
                                         <div class="col-md-12">
@@ -672,10 +689,35 @@
                             </div>
             
                             <div class="row">
-                                <div class="col-md-12 text-right text-danger">
-                                    <asp:Label ID="errMsg" runat="server" Font-Size="16px" Text=""></asp:Label>
+                                <div class="col-md-12 ">
+                                    <Label ID="errMsg" tyle="width: 100%;" Font-Size="16px" Text="A simple primary alert—check it out!" class="alert alert-primary">sdfdfds</Label>
                                 </div>
                             </div>
+
+                            <div class="alert alert-primary" role="alert">
+                                A simple primary alert—check it out!
+                              </div>
+                              <div class="alert alert-secondary" role="alert">
+                                A simple secondary alert—check it out!
+                              </div>
+                              <div class="alert alert-success" role="alert">
+                                A simple success alert—check it out!
+                              </div>
+                              <div class="alert alert-danger" role="alert">
+                                A simple danger alert—check it out!
+                              </div>
+                              <div class="alert alert-warning" role="alert">
+                                A simple warning alert—check it out!
+                              </div>
+                              <div class="alert alert-info" role="alert">
+                                A simple info alert—check it out!
+                              </div>
+                              <div class="alert alert-light" role="alert">
+                                A simple light alert—check it out!
+                              </div>
+                              <div class="alert alert-dark" role="alert">
+                                A simple dark alert—check it out!
+                              </div>
             
                         </div>
                     </div>
@@ -685,54 +727,6 @@
             
             
             
-            
-            
-            
-            
-            
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-            
-                        <!-- Modal content-->
-                        <div class="modal-content" style="color: Highlight">
-                            <div class="modal-header panel-heading">
-                                <%--<button type="button" class="close" data-dismiss="modal">&times;</button>--%>
-                                <button type="button" class="close" data-dismiss="modal">
-                                    <span aria-hidden="true">&times;</span> <span class="sr-only">Close</span>
-                                </button>
-                                <h4 class="modal-title">اضافة قسم جديد</h4>
-                            </div>
-                            <div class="modal-body">
-            
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div style="display: flex;">
-                                                <label for="tBoxsection">اسم القسم الجديد </label>
-                                                &nbsp;<small id="Small1" runat="server" class="form-text text-danger"></small>
-                                            </div>
-                                            <input type="text" runat="server" class="form-control" id="tBoxsection" name="tBoxsection" placeholder="اكتب القسم" />
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div id="Div1" hidden="hidden" runat="server"></div>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="modal-footer">
-                                <asp:Button ID="btnAddSection" runat="server" Text="موافق" CssClass="btn btn-success" Font-Size="Large" Width="130px" OnClick="btnAddSection_Click" />
-                                &nbsp;
-                                <button type="button" id="mybutModal2" style="width: 130px;" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
-                            </div>
-            
-                        </div>
-            
-                    </div>
-                </div>
             
                 
             </div>
