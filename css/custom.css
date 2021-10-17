@@ -30,6 +30,7 @@ body {
 html {
   margin: 0;
   padding: 0;
+  background-color: var(--bg) !important;
   --link-hover-focus: #344f4d;
   --bg: #eeeeee;
   --bg-top-navbar: #b3bbbe;
@@ -97,6 +98,9 @@ html {
 }
 
 html[data-theme="dark"] {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg) !important;
   --link-hover-focus: #1f3331;
   --bg: #1f3331;
   --bg-top-navbar: #344f4d;
@@ -643,7 +647,9 @@ html.transition *:after {
 
 .dropdown .list-unstyled li a {
   padding-right: 66px !important;
+  text-align: justify !important;
 }
+
 /*============================================================================
    sidebar style End
 ==============================================================================*/
@@ -1199,13 +1205,12 @@ footer .copyright {
     width: 80px;
     height: 100% !important;
     position: fixed !important;
-    overflow: auto !important;
+    overflow: visible !important;
     top: 0;
-    z-index: 665;
+    z-index: 666;
     float: right !important;
     bottom: 0 !important;
   }
-
   #sidebar.active .sidebar-header h3 span {
     display: none;
     transition: all 0.5s ease;
@@ -1236,7 +1241,7 @@ footer .copyright {
     right: 90px;
     color: var(--color-text-sidebar-menu) !important;
     background-color: var(--bg-color-sidebar-menu) !important;
-    width: 240px;
+    width: 265px;
     height: auto;
     margin: 5px 0;
     top: 0;
