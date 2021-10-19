@@ -12,6 +12,10 @@
     <!-- Material Icons -->
     <link href="css/material-design-icons.css"   rel="stylesheet">
 
+    <link href="css/bootstrap-multiselect.min.css"   rel="stylesheet">
+
+   
+
 </head>
 <body>
 
@@ -298,9 +302,64 @@
 
             </div>
 
+            
 
 
 
+
+              <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12"><!-- start buttons -->
+                    <div class="card card-stats">
+                        
+                        <div class="card-content">
+                            
+
+
+                              <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select runat="server" class="custom-select form-control" id="DDLWorkDept">
+                                            <option value="0" selected="selected">اختر...</option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group mt-sm-3">
+                                        <button type="submit" class="btn btn-primary ">المستخدم الاول</button>
+                                        <button type="submit" class="btn btn-primary ">المستخدم الثاني</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                           
+                            
+                            <form class="form-horizontal" method="POST" action="post.php">
+                                <div class="form-group">
+                                    <label for="example-post">Multiselect</label>
+                                        <select id="example-post" name="multiselect[]" multiple="multiple">
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                            <option value="4">Option 4</option>
+                                            <option value="5">Option 5</option>
+                                            <option value="6">Option 6</option>
+                                        </select>
+                                    </div>
+                                
+                            </form>
+
+
+
+                        </div>
+                    </div>
+                </div> <!-- end buttons -->
+            </div>
+            
 
             
          </div><!--- Main-content End --------->
@@ -355,5 +414,19 @@
     <script src="js/Chart.min.js"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="/js/bootstrap-multiselect.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#example-post').multiselect({
+                includeSelectAllOption: true,
+                enableFiltering: true,
+                buttonContainer: '<div class="btn-group w-100" />'
+            });
+        });
+    </script>
+   
+
 </body>
 </html>
