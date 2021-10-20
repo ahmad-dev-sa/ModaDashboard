@@ -426,7 +426,7 @@ a:focus {
    Light / Dark Mode switch style
 ==============================================================================*/
 
-input[type="checkbox"] {
+#switch {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -455,11 +455,11 @@ footer label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+footer input:checked + label {
   background: var(--color-headings);
 }
 
-input:checked + label:after {
+footer input:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }

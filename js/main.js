@@ -48,14 +48,8 @@ $(document).ready(function(){
         $('#sidebar, .body-overlay').toggleClass('show-nav');
     });
 
-
-    $('#framework').multiselect({
-        nonSelectedText: 'Select Framework',
-        enableFiltering: true,
-        enableCaseInsensitiveFiltering: true,
-        buttonWidth:'400px'
-       });
-
+    // -- Initialize the multiselect: 
+    $('.multi_select').selectpicker();
  });
 
  

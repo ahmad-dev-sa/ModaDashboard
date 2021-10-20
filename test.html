@@ -12,9 +12,15 @@
     <!-- Material Icons -->
     <link href="css/material-design-icons.css"   rel="stylesheet">
 
-    <link href="css/bootstrap-multiselect.min.css"   rel="stylesheet">
+    <!-- JS & CSS library of MultiSelect plugin -->
+    <link rel="stylesheet" href="css/jquery.multiselect.css">
 
-   
+<style>
+    /* example of setting the width for multiselect */
+    #testSelect1_multiSelect {
+        width: 100%;
+    }
+</style>
 
 </head>
 <body>
@@ -336,23 +342,23 @@
 
                             </div>
 
-                           
-                            
-                            <form class="form-horizontal" method="POST" action="post.php">
-                                <div class="form-group">
-                                    <label for="example-post">Multiselect</label>
-                                        <select id="example-post" name="multiselect[]" multiple="multiple">
-                                            <option value="1">Option 1</option>
-                                            <option value="2">Option 2</option>
-                                            <option value="3">Option 3</option>
-                                            <option value="4">Option 4</option>
-                                            <option value="5">Option 5</option>
-                                            <option value="6">Option 6</option>
-                                        </select>
-                                    </div>
-                                
-                            </form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group mt-sm-3">
+                                         <!-- Build your select: -->
 
+                                         <select name="langOpt[]" multiple id="langOpt" class="rtl">
+                                            <option value="C++">C++</option>
+                                            <option value="C#">C#</option>
+                                            <option value="Java">Java</option>
+                                            <option value="Objective-C">Objective-C</option>
+                                            <option value="JavaScript">JavaScript</option>
+                                        </select>
+                                        
+                                </div>
+                           
+                           
+                        </div>
 
 
                         </div>
@@ -409,24 +415,20 @@
     <script src="js/jquery-3.5.1.slim.min.js" ></script>
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" ></script>
-
-
-    <script src="js/Chart.min.js"></script>
-    <script src="js/dashboard.js"></script>
+    <!-- JS & CSS library of MultiSelect plugin -->
+    <script src="js/jquery.multiselect.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="/js/bootstrap-multiselect.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#example-post').multiselect({
-                includeSelectAllOption: true,
-                enableFiltering: true,
-                buttonContainer: '<div class="btn-group w-100" />'
-            });
+    
+
+    <script>
+        $('#langOpt').multiselect({
+            columns: 1,
+            placeholder: 'Select Languages',
+            selectAll: true
         });
-    </script>
-   
+        </script>
 
 </body>
 </html>
