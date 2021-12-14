@@ -755,6 +755,11 @@ html.transition *:after {
   transition: all 150ms linear;
 }
 
+.dropdownRight {
+  right: auto !important;
+  left: 0 !important;
+}
+
 .navbar-nav > .active > a:focus {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.08);
